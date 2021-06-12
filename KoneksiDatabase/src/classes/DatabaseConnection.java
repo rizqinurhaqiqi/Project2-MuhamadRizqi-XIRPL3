@@ -19,7 +19,7 @@ public class DatabaseConnection {
         Connection koneksi = null;
 
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             koneksi = DriverManager.getConnection(konString, username, password);
             System.out.println("Koneksi Berhasil");
         } catch (Exception ex) {
